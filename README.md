@@ -22,21 +22,21 @@ Income Dataset:
   - Excel
   
 **Data Cleaning & Preparation**
-  -Removed rows with null or redundant values
-  -Transposed temperature table to match the format of the income table 
-  -Separated country and city into two different columns to join tables efficiently 
-  -Found the average temperature each year for every city using daily records
-  -Standardized city names
-  -Joined tables on the condition of having the same city 
+  - Removed rows with null or redundant values
+  - Transposed temperature table to match the format of the income table 
+  - Separated country and city into two different columns to join tables efficiently 
+  - Found the average temperature each year for every city using daily records
+  - Standardized city names
+  - Joined tables on the condition of having the same city 
 343 cities were matched during the process. 
 
 **Exploratory Analysis**
 Visualization: Scatterplot of temperature vs income.
-  -X-axis: Average temperature
-  -Y-axis: Average income
-  -Trendline: y = -40.32x + 1858
+  - X-axis: Average temperature
+  - Y-axis: Average income
+  - Trendline: y = -40.32x + 1858
 The trendline showed a negative relationship, indicating that places with higher temperatures generally experienced more economic struggle.
-  -R² = 0.0677
+  - R² = 0.0677
 However, the R2 value was quite low, conveying that the data points did not fit the regression model well.
 
 **Conclusion**
