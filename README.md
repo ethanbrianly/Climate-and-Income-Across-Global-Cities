@@ -7,19 +7,19 @@ Is a city's temperature related to its economic prosperity?
 
 Datasets:
 Temperature Dataset:
-  *Rows: Day (2015-01-01 to 2019-12-31) 
-  *Columns: Country and City (Ex: Afghanistan-Farah)
-  *Values: Temperature Recorded (℃)
+  - Rows: Day (2015-01-01 to 2019-12-31) 
+  - Columns: Country and City (Ex: Afghanistan-Farah)
+  - Values: Temperature Recorded (℃)
 Income Dataset:
-  *Rows: City, Region, Country (separate rows)
-  *Columns: Years (2010-2020)
-  *Values: Yearly Average Incomes (in USD)
+  - Rows: City, Region, Country (separate rows)
+  - Columns: Years (2010-2020)
+  - Values: Yearly Average Incomes (in USD)
 
 **Tools Used**
   
-  *Python	
-    *Pandas
-  *Excel
+  - Python	
+    - Pandas
+  - Excel
   
 **Data Cleaning & Preparation**
   -Removed rows with null or redundant values
