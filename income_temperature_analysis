@@ -1,0 +1,26 @@
+>>> import pandas as pd
+>>> temperature = pd.read_csv("C:/Users/ethan/Downloads/temperatures.csv")
+>>> salary = pd.read_csv("C:/Users/ethan/Downloads/salaries.csv")
+>>> temperature["City"] = temperature["City"].str.strip()
+>>> salary["City"] = salary["City"].str.strip()
+>>> temperature = temperature[["City", "Average Temperature"]]
+>>> salary = salary[["City", "Average Salary"]]
+>>> combined = pd.merge(temperature, salary, on="City", how="inner")
+>>> combined.to_csv("city_salary_temperature.csv", index=False)
+>>> print(combined)
+                 City  Average Temperature Average Salary
+0               Kabul            11.868024        $40.77
+1              Tirana            13.116519       $347.35
+2             Algiers            19.309240       $331.98
+3              Luanda            25.869321          $-
+4        Buenos Aires            18.306810       $890.79
+..                ...                  ...            ...
+345           Caracas            23.985425        $21.58
+346          Valencia            25.827991     $1,476.02
+347             Hanoi            23.617103       $285.76
+348  Ho Chi Minh City            27.917594       $381.01
+349            Harare            19.216724       $252.00
+
+[350 rows x 3 columns]
+>>> combined.to_csv("C:/Users/ethan/Downloads/cities_salary_temperature.csv", index=False)
+>>>
