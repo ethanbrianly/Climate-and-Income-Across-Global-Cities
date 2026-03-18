@@ -34,9 +34,9 @@ Datasets:
 Visualization: Scatterplot of temperature vs income.
   - X-axis: Average temperature
   - Y-axis: Average income
-  - Trendline: y = -40.32x + 1858
+  - Trendline: y = -40.32x + 1858,
 The trendline showed a negative relationship, indicating that places with higher temperatures generally experienced more economic struggle.
-  - R² = 0.0677
+  - R² = 0.0677,
 However, the R2 value was quite low, conveying that the data points did not fit the regression model well.
 
 **Conclusion**
